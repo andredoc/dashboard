@@ -31,7 +31,7 @@ export const options = {
         },
         title: {
             display: true,
-            text: 'Chart.js Line Chart',
+            text: 'Chart Line (Revenue)',
         },
     },
 };
@@ -42,16 +42,16 @@ export const data = {
     labels,
     datasets: [
         {
-            label: 'Dataset 1',
+            label: '2021',
             data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-            borderColor: 'rgb(255, 99, 132)',
-            backgroundColor: 'rgba(255, 99, 132, 0.5)',
+            borderColor: 'purple',
+            backgroundColor: 'rgba(128, 0, 128, 0.3)',
         },
         {
-            label: 'Dataset 2',
+            label: '2022',
             data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
             borderColor: 'rgb(53, 162, 235)',
-            backgroundColor: 'rgba(53, 162, 235, 0.5)',
+            backgroundColor: 'rgba(53, 162, 235, 0.3)',
         },
     ],
 };
@@ -59,9 +59,10 @@ export const data = {
 const Chart=()=>{
     return(
         <div className="chart">
-            <Line options={options} data={data} />;
+            <div className="title">Last 6 Months (Revenue)</div>
+            <Line width="100%" height="50%" options={options} data={data} />
         </div>
     )
-}
+};
 
 export default Chart;
