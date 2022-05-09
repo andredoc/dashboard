@@ -56,11 +56,11 @@ export const data = {
     ],
 };
 
-const Chart=()=>{
+const Chart = ({ title })=>{
     return(
         <div className="chart">
-            <div className="title">Last 6 Months (Revenue)</div>
-            <Line width="100%" height="50%" options={options} data={data} />
+            <div className="title">{title}</div>
+            <Line width="100%" height="50px" options={options} data={data} />
         </div>
     )
 };

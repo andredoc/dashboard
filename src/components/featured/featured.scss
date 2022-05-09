@@ -28,6 +28,11 @@
         .featuredChart{
             width: 100%;
             height:100%;
+
+            .pie{
+                width: 50%;
+                height: 50%;;
+            }
         }
 
         .title{
@@ -46,11 +51,11 @@
             text-align: center;
         }
 
-        .button{
-            height: 150px;
-            width: 300px;
-            border-color: 0.5px solid rgba(0,128, 0 ,0.2);
-        }
+        // .button{
+        //     height: 150px;
+        //     width: 300px;
+        //     border-color: 0.5px solid rgba(0,128, 0 ,0.2);
+        // }
 
         .summary{
             width: 100%;
