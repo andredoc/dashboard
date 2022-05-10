@@ -11,12 +11,15 @@ import SettingsApplicationsRoundedIcon from '@mui/icons-material/SettingsApplica
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import ExitToAppOutlinedIcon from '@mui/icons-material/ExitToAppOutlined';
 import "./sidebar.scss"
+import {Link} from 'react-router-dom'
 
 const Sidebar= () => {
     return(
         <div className="sidebar">
             <div className="top">
-                <span className="logo">andredoc@</span>
+                <Link to="/" style={{textDecoration:"none"}} >
+                    <span className="logo">andredoc@</span>
+                </Link>      
             </div>
             <hr />
             <div className="center">
@@ -27,10 +30,12 @@ const Sidebar= () => {
                         <span>Dashboard</span>
                     </li>
                     <p className="title">LISTS</p>
-                    <li>
-                        <PersonOutlineOutlinedIcon className="icon" />
-                        <span>Users</span>
-                    </li>
+                    <Link to="/users" style={{ textDecoration: "none" }} >
+                        <li>
+                            <PersonOutlineOutlinedIcon className="icon" />
+                            <span>Users</span>
+                        </li>
+                    </Link>
                     <li>
                         <StoreRoundedIcon className="icon" />
                         <span>Products</span>
