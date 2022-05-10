@@ -1,5 +1,4 @@
 import './chart.scss'
-
 import {
     Chart as ChartJS,
     CategoryScale,

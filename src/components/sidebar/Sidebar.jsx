@@ -36,10 +36,12 @@ const Sidebar= () => {
                             <span>Users</span>
                         </li>
                     </Link>
+                    <Link to="/products" style={{ textDecoration: "none" }} >
                     <li>
                         <StoreRoundedIcon className="icon" />
                         <span>Products</span>
                     </li>
+                    </Link>
                     <li>
                         <CreditCardOutlinedIcon className="icon" />
                         <span>Orders</span>
