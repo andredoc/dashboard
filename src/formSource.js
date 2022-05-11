@@ -3,25 +3,25 @@ export const userInputs = [
         id: 1,
         label: "Username",
         type: "text",
-        placeholder: "john_doe",
+        placeholder: "andre_documet",
     },
     {
         id: 2,
         label: "Name and surname",
         type: "text",
-        placeholder: "John Doe",
+        placeholder: "Andre Documet",
     },
     {
         id: 3,
         label: "Email",
         type: "mail",
-        placeholder: "john_doe@gmail.com",
+        placeholder: "andre.documet@gmail.com",
     },
     {
         id: 4,
         label: "Phone",
         type: "text",
-        placeholder: "+1 234 567 89",
+        placeholder: "+34 611 106 858",
     },
     {
         id: 5,
@@ -32,13 +32,13 @@ export const userInputs = [
         id: 6,
         label: "Address",
         type: "text",
-        placeholder: "Elton St. 216 NewYork",
+        placeholder: "Calle Serrano 5-A, Madrid",
     },
     {
         id: 7,
         label: "Country",
         type: "text",
-        placeholder: "USA",
+        placeholder: "SPAIN",
     },
 ];
 
